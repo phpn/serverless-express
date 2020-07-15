@@ -24,7 +24,7 @@ functions:
     handler: index.handler  #assuming your handler file is handler.js
     events: 
       - http: ANY /
-      -http: 'ANY {proxy+}'
+      - http: 'ANY {proxy+}'
 
   # The following are a few examples of other events you can configure:
   # storageBlob:
