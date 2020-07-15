@@ -21,11 +21,10 @@ package:
 
 functions:
   app: 
-    handler: src/index.get  #assuming your handler file is handler.js
+    handler: index.handler  #assuming your handler file is handler.js
     events: 
-      - http:
-          path: GET
-          method: /
+      - http: ANY /
+      -http: 'ANY {proxy+}'
 
   # The following are a few examples of other events you can configure:
   # storageBlob:
