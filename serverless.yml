@@ -1,4 +1,6 @@
 
+org: pauloprates
+app: serverless-express
 service: express
 
 provider:
