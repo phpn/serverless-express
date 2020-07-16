@@ -3,21 +3,8 @@ service: express
 
 provider:
   name: aws
-  region: sa-east-1
   runtime: nodejs12.x
-
-
-# you can add packaging information here
-package:
-  # include:
-  #   - include-me.js
-  #   - include-me-dir/**
-  exclude:
-    # - exclude-me.js
-    # - exclude-me-dir/**
-    - local.settings.json
-    - .vscode/**
-
+  region: sa-east-1
 
 functions:
   app: 
